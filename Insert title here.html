@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<!-- saved from url=(0101)file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<title>Insert title here</title>
+
+<script src="./Insert title here_files/bootstrap.min.js.tải xuống"></script>
+<link href="./Insert title here_files/font-awesome.min.css" rel="stylesheet">
+<script src="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/js/jquery-1.11.1.min.js"></script>
+
+
+<link href="./Insert title here_files/giaoxutanthanh.css" rel="stylesheet">
+<link href="./Insert title here_files/icon" rel="stylesheet">
+
+<link rel="stylesheet" href="./Insert title here_files/font-awesome.min(1).css"><!-- icon facebook,twi -->
+
+
+ <link rel="stylesheet" href="./Insert title here_files/lightgallery.min.css"> <!-- lightbox ảnh sinh hoạt -->
+ <script src="./Insert title here_files/jquery.min.js.tải xuống"></script><!-- lightbox ảnh sinh hoạt -->
+
+
+
+<style type="text/css">
+
+
+		#lightgallery4 {
+			
+			
+		}
+
+	/* Base styles for the element that has a c-tooltip */
+		[data-c-tooltip] {
+		  position: relative;
+		  cursor: pointer;
+		}
+		/* Base styles for the entire c-tooltip */
+		[data-c-tooltip]:before,
+		[data-c-tooltip]:after {
+		  position: absolute;
+		  visibility: hidden;
+		  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+		  opacity: 0;
+		  -webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+		  -moz-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+		  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+		  -webkit-transform: translate3d(0, 0, 0);
+		  -moz-transform: translate3d(0, 0, 0);
+		  transform: translate3d(0, 0, 0);
+		  pointer-events: none;
+		}
+		/* Show the entire c-tooltip on hover and focus */
+		[data-c-tooltip]:hover:before,
+		[data-c-tooltip]:hover:after,
+		[data-c-tooltip]:focus:before,
+		[data-c-tooltip]:focus:after {
+		  visibility: visible;
+		  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		  opacity: 1;
+		}
+		/* Base styles for the c-tooltip's directional arrow */
+		[data-c-tooltip]:before {
+		  z-index: 1001;
+		  border: 6px solid transparent;
+		  background: transparent;
+		  content: "";
+		}
+		/* Base styles for the c-tooltip's content area */
+		[data-c-tooltip]:after {
+		  z-index: 1000;
+		  padding: -10px;
+		  width: 250px;
+		  background-color: #000;
+		  background-color: rgba(51, 51, 51, 0.9);
+		  color: #fff;
+		  content: attr(data-c-tooltip);
+		  font-size: 20px;
+		  line-height: 1.5;
+		}
+
+		/* Horizontally align top/bottom c-tooltips */
+		[data-c-tooltip]:after {
+		  margin-left: -125px;
+		}
+		[data-c-tooltip]:hover:before,
+		[data-c-tooltip]:hover:after,
+		[data-c-tooltip]:focus:before,
+		[data-c-tooltip]:focus:after{
+		  -webkit-transform: translateY(-12px);
+		  -moz-transform: translateY(-12px);
+		  transform: translateY(-12px);
+		}
+
+
+		/* Bottom */
+		[tooltip-position='bottom']:before,
+		[tooltip-position='bottom']:after {
+		  top: 70%;
+		  bottom: auto;
+		  left: 50%;
+		}
+		[tooltip-position='bottom']:before {
+		  margin-top: -18px;
+		  margin-bottom: 0;
+		  border-top-color: transparent;
+		  border-bottom-color: #000;
+		  border-bottom-color: rgba(51, 51, 51, 0.9);
+		}
+		[tooltip-position='bottom']:hover:before,
+		[tooltip-position='bottom']:hover:after,
+		[tooltip-position='bottom']:focus:before,
+		[tooltip-position='bottom']:focus:after {
+		  -webkit-transform: translateY(12px);
+		  -moz-transform: translateY(12px);
+		  transform: translateY(12px);
+		}
+</style>
+
+
+</head>
+
+<body style="border-style:groove;">
+	
+
+	<div class="ngaythang" style="background-color:#6E6E6E;">
+		<ul>
+			<li>
+			<script language="" type="text/javascript">
+
+				<!-- // Array ofmonth Names
+
+				<!-- var monthNames = new Array("một","hai","ba","bốn","năm","sáu","bảy","tám","chín","mười","mười một","mười hai"); -->
+
+				var monthNames = new Array("01","02","03","04","05","06","07","08","09","10","11","12");
+
+				var dayNames = new Array("Chủ nhật,","Thứ Hai,","Thứ Ba,","Thứ tư,","Thứ Năm,","Thứ Sáu,","Thứ Bảy,")
+
+				var now = new Date();
+
+				thisYear = now.getYear();
+
+				thisDay = dayNames[now.getDay()];
+
+				if(thisYear < 1900) {thisYear += 1900}; // corrections if Y2K display problem
+
+				document.write("Hôm nay : " + thisDay +" "+"ngày"+" "+ now.getDate() + " tháng " + monthNames[now.getMonth()] + " năm " + thisYear);
+
+					</script>Hôm nay : Thứ Bảy, ngày 28 tháng 08 năm 2021
+				</li>
+			</ul>
+		</div>
+	
+
+
+  
+
+	<div id="layout">
+	<div class="leftmenu">
+			<ul>
+				<li></li><li></li><li></li><li>
+				</li><li>	
+					<a href="https://www.facebook.com/GI%C3%81O-X%E1%BB%A8-T%C3%82N-THANH-100397718317368/?ref=pages_you_manage" class="btn"><i class="fa fa-facebook-square" style="font-size:15px"></i></a>
+				</li>
+				<li>	
+					<a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="btn"><i class="material-icons" style="font-size:15px;margin-top:5px;"></i></a>
+				</li>
+				<li>	
+					<a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="btn"><i class="fa fa-twitter" style="font-size:15px"></i></a>
+				</li>
+				<li>	
+					<a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="btnn"><i class="fa fa-youtube-play" style="font-size: 15px;"></i></a>
+				</li>
+					
+			</ul>
+		</div>
+		<div class="header">
+			<ul>
+				<li><a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="cool-link">GIÁM MỤC</a></li>
+				<li><a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="cool-link">LINH MỤC</a></li>
+				<li><a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="cool-link">HÌNH ẢNH</a></li>
+			</ul>
+		</div>
+
+		<div class="thanhtan">
+
+			<ul>
+				<li></li><li></li>
+				<li>
+					<a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/giaoxutanthanh.html"><img src="./Insert title here_files/gpvinh_logomoi1-1.png" style="float:left;width: 20%;height: 90px;margin-top: 18px;margin-left: 105px;"></a>
+				</li>
+				<li>
+					<img src="./Insert title here_files/logo-nam-muc-vu-2021j.png" style="float: right;width: 65%;height:100px;margin-top: 18px;margin-right: 20px;">
+				</li>
+			</ul>
+		</div>
+
+		<div class="menu">
+			
+			<ul>
+				<ul><li><img src="./Insert title here_files/226341023_1153317841833376_4646312080455502948_n.png" style="height: 60px; margin-top: -8px;margin-left: 20px;"></li></ul>
+
+				<li></li>
+				<li><a href="https://giaoxutanthanh.github.io/1234ngay/1234.html" class="cool-menu">TRANG CHỦ</a></li>
+				<li><a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="cool-menu">GIỚI THIỆU</a>
+					<ul>
+						<li><a href="https://giaoxutanthanh.github.io/gioithieu/gioithieu.html">Tổng quan giáo xứ</a></li>
+						<li><a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="list-menu">Tổ chức - Điều hành</a></li>
+						<li><a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="list-menu">Câu chuyện vui</a></li>
+					</ul>
+			    </li>
+
+			    <li><a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="cool-menu">GIÁO XỨ</a>
+					<!-- <ul>
+						<li><a href="#" class="list-menu"></a></li>
+						<li><a href="#" class="list-menu"></a></li>
+						<li><a href="#" class="list-menu"></a></li>
+					</ul> -->
+			    </li>
+
+				<li><a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="cool-menu">LỜI CHÚA</a>
+					<ul>
+						<li><a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="list-menu">Lời Chúa 365 Ngày</a></li>
+						<li><a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="list-menu">Giáo Lý Cơ Bản</a></li>
+						<li><a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="list-menu">Chia Sẻ Kiến Thức</a></li>
+					</ul>
+				</li>
+
+				<li><a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="cool-menu">PHỤNG VỤ</a>
+					<ul>
+						<li><a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="list-menu">Các Giờ Kinh Phụng Vụ</a></li>
+						<li><a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="list-menu">Lịch Phụng Vụ Giáo Phận</a></li>
+					</ul>
+				</li>
+				<li><a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="cool-menu">MEDIA</a>
+					<ul>
+						<li><a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html" class="list-menu">Hình ảnh sinh hoạt</a></li>
+						<li><a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="list-menu">Kênh youtube giáo xứ</a></li>
+						<li><a href="http://phimconggiao.net/" class="list-menu">Phim công giáo</a></li>
+						<li><a href="http://thanhca.biz/" class="list-menu">Thánh ca</a></li>
+					</ul>
+				</li>
+
+				<!-- <li>
+
+	  					<form id="demo-2">
+						 <input type="search" placeholder="Search">
+						</form>
+      			</li> -->
+      			
+      			
+			</ul>
+		
+		</div>
+		
+
+
+		
+		<div class="abc" style="width: 100%; height:auto;">
+			<br>
+			<h2 style="margin-left: 160px;">Hình Ảnh</h2>
+			<h3 style="text-align: center;color: red;font-family: initial;">HÌNH ẢNH SINH HOẠT GIÁO XỨ</h3><br><hr style="width: 80%"><br><br>
+			
+
+
+	<!-- -	-	-------------------ABULM 1------------------------------------------------------------------------------------ -->
+
+				<section id="ruby-photogallery">
+					 <div id="lightgallery" style="margin-left: 160px;margin-top: -30px;">
+	
+							<a href="./Insert title here_files/ThanhTan-02182016 (25).jpg" tooltip-position="bottom" data-c-tooltip="Lễ khánh thành nhà thờ 2016" style="text-align: center;"><img src="./Insert title here_files/ThanhTan-02182016 (25).jpg"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (29).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (29).jpg" style="display: none;"></a> 	
+							<a href="./Insert title here_files/ThanhTan-02182016 (3).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (3).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (4).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (4).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (5).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (5).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (6).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (6).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (7).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (7).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (8).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (8).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (9).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (9).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (11).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (11).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (12).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (12).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (12).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (12).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (13).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (13).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (14).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (14).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (15).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (15).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (16).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (16).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (17).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (17).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (18).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (18).jpg" style="display: none;"></a>
+
+					</div>
+				</section>
+
+							<script type="text/javascript">
+
+							$(document).ready(function() {
+
+							        $("#lightgallery").lightGallery();
+
+							   });
+
+							</script>
+
+
+
+							<!-- ==================================ABULM 2====================================== -->
+
+				<section id="ruby-photogallery">
+					 <div id="lightgallery1" style="margin-left: 160px;margin-top: -30px;">
+
+							<a href="./Insert title here_files/ThanhTan-02182016 (19).jpg" tooltip-position="bottom" data-c-tooltip="Lễ khánh thành nhà thờ 2016" style="text-align: center;"><img src="./Insert title here_files/ThanhTan-02182016 (19).jpg"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (20).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (20).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (21).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (21).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (22).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (22).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (23).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (23).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (24).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (24).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (25).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (25).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (26).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (26).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (27).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (27).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (28).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (28).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (29).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (29).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (30).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (30).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (31).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (31).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (32).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (32).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (33).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (33).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (34).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (34).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (35).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (35).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (36).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (36).jpg" style="display: none;"></a>
+
+					</div>
+				</section>
+
+							<script type="text/javascript">
+
+							$(document).ready(function() {
+
+							        $("#lightgallery1").lightGallery();
+
+							   });
+
+							</script>	
+
+
+					<!-- ======================================ABULM 3====================================== -->
+
+
+					<section id="ruby-photogallery">
+					 <div id="lightgallery2" style="margin-left: 160px;margin-top: -30px;">
+
+							<a href="./Insert title here_files/ThanhTan-02182016 (37).jpg" tooltip-position="bottom" data-c-tooltip="Lễ khánh thành nhà thờ 2016" style="text-align: center;"><img src="./Insert title here_files/ThanhTan-02182016 (37).jpg"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (38).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (38).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (39).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (39).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (40).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (40).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (41).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (41).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (42).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (42).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (43).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (43).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (44).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (44).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (45).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (45).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (46).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (46).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (47).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (47).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (48).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (48).jpg" style="display: none;"></a>
+							
+
+					</div>
+				</section>
+
+							<script type="text/javascript">
+
+							$(document).ready(function() {
+
+							        $("#lightgallery2").lightGallery();
+
+							   });
+
+							</script>	
+							<!-- ========================================ABULM 4=========================================== -->
+				<section id="ruby-photogallery">
+
+					 <div id="lightgallery3" style="margin-left: 160px;margin-top: -30px;">
+
+							<a href="./Insert title here_files/226455658_367807021576435_2410098628049168957_n.jpg" tooltip-position="bottom" data-c-tooltip="Ảnh Nhà Thờ Giáo Xứ" style="text-align: center;"><img src="./Insert title here_files/226455658_367807021576435_2410098628049168957_n.jpg"></a>
+							<a href="./Insert title here_files/93090902_103119961378477_6414452593363255296_o.jpg"><img src="./Insert title here_files/93090902_103119961378477_6414452593363255296_o.jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/93422693_103120201378453_1978509193509863424_o.jpg"><img src="./Insert title here_files/93422693_103120201378453_1978509193509863424_o.jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/93995951_103120644711742_3435292573382475776_o.jpg"><img src="./Insert title here_files/93995951_103120644711742_3435292573382475776_o.jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/223152757_367806878243116_3512814144666957769_n.jpg"><img src="./Insert title here_files/223152757_367806878243116_3512814144666957769_n.jpg" style="display: none;"></a>
+							<a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/anh%20website/223599977_367806861576451_5375482053277833068_n.jpg"><img src="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/anh%20website/ThanhTan-02182016%20(42).jpgC:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/anh%20website/223599977_367806861576451_5375482053277833068_n.jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/225603669_367806958243108_6069663870499541403_n (1).jpg"><img src="./Insert title here_files/225603669_367806958243108_6069663870499541403_n (1).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (49).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (49).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (51).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (51).jpg" style="display: none;"></a>
+							
+							
+					</div>
+
+
+				</section>
+
+							<script type="text/javascript">
+
+							$(document).ready(function() {
+
+							        $("#lightgallery3").lightGallery();
+
+							   });
+
+							</script>
+
+							<style>
+
+							#ruby-photogallery{line-height:8;-webkit-column-count:4;-webkit-column-gap:0;-moz-column-count:4;-moz-column-gap:0;column-count:4;column-gap:0 ;}
+
+							#ruby-photogallery img{width:130%!important;height:auto!important;padding:2px;margin:2px;box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12);}
+
+				</style>
+
+			</div>		
+					
+							
+
+							<!-- =============================================ABULM 5=========================================== -->
+			<div class="abc1" style="width: 100%;height: auto;margin-left: 400px;">				
+				<section id="ruby-photogallery1">
+					 <div id="lightgallery4" style="margin-left: 160px;margin-top: -30px;">
+
+							<p><a href="./Insert title here_files/226455658_367807021576435_2410098628049168957_n.jpg" tooltip-position="bottom" data-c-tooltip="Ảnh Nhà Thờ Giáo Xứ" style="text-align: center;"><img src="./Insert title here_files/226455658_367807021576435_2410098628049168957_n.jpg"></a></p>
+							<a href="./Insert title here_files/93090902_103119961378477_6414452593363255296_o.jpg"><img src="./Insert title here_files/93090902_103119961378477_6414452593363255296_o.jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/93422693_103120201378453_1978509193509863424_o.jpg"><img src="./Insert title here_files/93422693_103120201378453_1978509193509863424_o.jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/93995951_103120644711742_3435292573382475776_o.jpg"><img src="./Insert title here_files/93995951_103120644711742_3435292573382475776_o.jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/223152757_367806878243116_3512814144666957769_n.jpg"><img src="./Insert title here_files/223152757_367806878243116_3512814144666957769_n.jpg" style="display: none;"></a>
+							<a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/anh%20website/223599977_367806861576451_5375482053277833068_n.jpg"><img src="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/anh%20website/ThanhTan-02182016%20(42).jpgC:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/anh%20website/223599977_367806861576451_5375482053277833068_n.jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/225603669_367806958243108_6069663870499541403_n (1).jpg"><img src="./Insert title here_files/225603669_367806958243108_6069663870499541403_n (1).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (49).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (49).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (51).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (51).jpg" style="display: none;"></a>
+							
+							
+
+					</div>
+				</section>
+
+							<script type="text/javascript">
+
+							$(document).ready(function() {
+
+							        $("#lightgallery4").lightGallery();
+
+							   });
+
+							</script>
+							
+										
+							<!-- =============================================ABULM 6=========================================== -->
+				<section id="ruby-photogallery1">
+					 <div id="lightgallery4" style="margin-left: 160px;margin-top: -30px;">
+
+							<p><a href="./Insert title here_files/226455658_367807021576435_2410098628049168957_n.jpg" tooltip-position="bottom" data-c-tooltip="Ảnh Nhà Thờ Giáo Xứ" style="text-align: center;"><img src="./Insert title here_files/226455658_367807021576435_2410098628049168957_n.jpg"></a></p>
+							<a href="./Insert title here_files/93090902_103119961378477_6414452593363255296_o.jpg"><img src="./Insert title here_files/93090902_103119961378477_6414452593363255296_o.jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/93422693_103120201378453_1978509193509863424_o.jpg"><img src="./Insert title here_files/93422693_103120201378453_1978509193509863424_o.jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/93995951_103120644711742_3435292573382475776_o.jpg"><img src="./Insert title here_files/93995951_103120644711742_3435292573382475776_o.jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/223152757_367806878243116_3512814144666957769_n.jpg"><img src="./Insert title here_files/223152757_367806878243116_3512814144666957769_n.jpg" style="display: none;"></a>
+							<a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/anh%20website/223599977_367806861576451_5375482053277833068_n.jpg"><img src="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/anh%20website/ThanhTan-02182016%20(42).jpgC:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/anh%20website/223599977_367806861576451_5375482053277833068_n.jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/225603669_367806958243108_6069663870499541403_n (1).jpg"><img src="./Insert title here_files/225603669_367806958243108_6069663870499541403_n (1).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (49).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (49).jpg" style="display: none;"></a>
+							<a href="./Insert title here_files/ThanhTan-02182016 (51).jpg"><img src="./Insert title here_files/ThanhTan-02182016 (51).jpg" style="display: none;"></a>
+							
+							
+
+					</div>
+				</section>
+
+							<script type="text/javascript">
+
+							$(document).ready(function() {
+
+							        $("#lightgallery4").lightGallery();
+
+							   });
+
+							</script>			
+							<!-- =============================================ABULM 7=========================================== -->
+							<!-- =============================================ABULM 8=========================================== -->					
+
+
+
+
+			</div>		
+				<style>
+
+					#ruby-photogallery1{line-height:6;-webkit-column-count:4;-webkit-column-gap:0;-moz-column-count:4;-moz-column-gap:0;column-count:4;column-gap:0;}
+
+					#ruby-photogallery1 img{width:130%!important;height:auto!important;padding:2px;margin:2px;box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12);}
+
+				</style>
+			
+
+
+		
+		
+		<div class="up" style="">
+			<ul>
+
+				<a class="imgup"><img src="./Insert title here_files/226455658_367807021576435_2410098628049168957_n.jpg" style="width: 100%;height: 600px;"></a>
+				<li>
+					<a><img src="./Insert title here_files/226341023_1153317841833376_4646312080455502948_n.png" style="width: 180px;height: 180px;float: left; margin-top:-290px;position: absolute;margin-left:80px;"></a>
+				</li>
+
+				<li>
+					<iframe src="./Insert title here_files/embed.html" width="300" height="200" style="border:0;margin-top: -600px;position: absolute;margin-left: 1030px;opacity: 0.8;" allowfullscreen="" loading="lazy"></iframe>
+				</li>
+
+				<li>
+					<p class="chuthich" style="position: absolute;margin-top: -550px;margin-left: 80px;font-weight: bold;font-size: 20px;">Liên hệ<br><br>
+						Ban Truyền thông Giáo xứ Tân Thanh<br><br>
+						Địa chỉ: Giáo xứ Tân Thanh<br>
+						Xóm 11 - Quỳnh Thanh - Quỳnh Lưu - Nghệ An<br><br>
+						Email:giaoxutanthanh11@gmail.com hoặc<br>linhludan69@gmail.com
+					</p>
+				</li>
+
+				<li>
+					<p style="margin-top: -100px;position: absolute;margin-left: 346px;color: #FAFAFA;font-family: initial;font-weight: bold">MẠNG XÃ HỘI :</p>
+				</li><li>	
+					<a href="https://www.facebook.com/GI%C3%81O-X%E1%BB%A8-T%C3%82N-THANH-100397718317368/?ref=pages_you_manage" class="btn"><i class="fa fa-facebook-square" style="font-size:25px;position:absolute;margin-top: -100px;margin-left: 530px;"></i></a></li>
+
+				<li>
+					<a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="btn"><i class="fa fa-twitter" style="font-size: 25px;position:absolute;margin-top: -100px;margin-left: 580px;"></i></a></li>
+				
+			    <li>
+					<a href="file:///C:/Users/JOS%20LINH%20NGUYEN/eclipse-workspace/aa/WebContent/cactrangweb/hinhanhsinhhoat.html#" class="btnn"><i class="fa fa-youtube-play" style="font-size: 25px;position:absolute;margin-top: -100px;margin-left: 630px;"></i></a></li>
+			
+
+
+			</ul>
+		</div>
+
+		<div class="footer" style="margin-top: 1px;">
+			<ul>
+				<li><a style="margin-top:14px;color: #BDBDBD;">© 2021 -Giáo Xứ Tân Thanh</a></li>
+			</ul>
+	       	<ul>
+	       		<li><p style="position: absolute;margin-top: -300px;margin-left: 350px;color: #FFFFFF;font-family: initial;font-weight: bold;">WEBSITE GIÁO XỨ TÂN THANH</p><br><br><p style="position: absolute;margin-top: -300px;margin-left: 350px;color: #FAFAFA;font-family: initial;font-weight: bold;">Trang thông tin chính thức của Giáo xứ Tân Thanh do Ban Truyền thông Xã hội của Giáo phận đảm nhiệm.<br>
+				Mọi tin, bài, thư từ, ý kiến đóng góp, v.v.. xin vui lòng gửi về địa chỉ email dưới đây.</p><br><br><br><br><p style="position: absolute;margin-top: -300px;margin-left: 350px;color: #FFFFFF;font-family: initial;font-weight: bold;">Email biên tập:<a href="https://mail.google.com/mail/u/0/#inbox" style="color: #5858FA;margin-top: -24px;margin-right:-20px;text-decoration: none;font-family: initial;font-weight: bold;">linhludan69@gmail.com</a></p></li>
+	       	</ul>
+		</div>
+	</div>
+
+		<script src="./Insert title here_files/Lightgallery.js.tải xuống"></script>
+
+
+
+</body></html>
